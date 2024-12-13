@@ -1,5 +1,5 @@
 import OpenAI from 'openai';
-import chatgptAPI from "../api_key";
+import {chatgptAPI} from "../api_key";
 
 const openai = new OpenAI({
   apiKey: chatgptAPI,
