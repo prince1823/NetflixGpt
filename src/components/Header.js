@@ -59,15 +59,15 @@ dispatch(toggleGptSearchView())
                     onChange={handleLanguageChange}>
                         {SUPPORTED_LANGUAGES.map((lang=> <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>))}
                     </select>)}
-                    <button className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg"
+                    <button className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg hover:bg-purple-900"
                     onClick = {handleGptSearchClick}>
                        {showGptSearch?"Homepage":" GPT Search"}</button>
                     <img
-                        className="w-12 h-12"
+                        className="w-12 h-12 rounded-3xl mt-1"
                         alt="usericon"
                         src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"
                     />
-                    <button onClick={handleSignOut} className="font-bold text-white">
+                    <button onClick={handleSignOut} className="my-2 ml-3 font-bold text-white text-lg bg-orange-600 px-4 rounded-lg hover:bg-red-700 transition-colors duration-1000">
                         Sign Out
                     </button>
                 </div>
